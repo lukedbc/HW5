@@ -17,8 +17,8 @@ function handleSignUp(e) {
         if (signUpEntity.isValid()) {
             signUpStorage.add(signUpEntity);
             alert("Sign up sucessfully!");
+            signUpStorage.saveToCache();
         }
-        signUpStorage.saveToCache();
     })
 }
 
@@ -33,8 +33,8 @@ function handleContact(e) {
         if (contact.isValid()) {
             contactStorage.add(contact);
             alert("Received your message!")
-        }
         contactStorage.saveToCache();
+        }
     })
 }
 
