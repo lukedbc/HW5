@@ -63,6 +63,16 @@ SignUpEntity.prototype.isValid = function() {
         throw new Error("DOB is greater than the current day");
     }
 
+    let age = today.getFullYear() - dobAsDate.getFullYear();
+    let m = today.getMonth() - dobAsDate.getMonth();
+    if (m < 0 || (m === 0 && today.getDate() < dobAsDate.getDate())) {
+        age--;
+    }
+
+    if (age < 18) {
+        throw new Error("At least 18 years old");
+    }
+
     return true;
 }
 
