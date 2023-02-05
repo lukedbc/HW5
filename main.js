@@ -33,7 +33,7 @@ function handleContact(e) {
         if (contact.isValid()) {
             contactStorage.add(contact);
             alert("Received your message!")
-        contactStorage.saveToCache();
+            contactStorage.saveToCache();
         }
     })
 }
