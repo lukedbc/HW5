@@ -75,7 +75,24 @@ function handleInputTemplate(e, handleFunction) {
     }
 }
 
+function initMatrix() {
+    drawMatrixTo("join-a-team-content");
+    for (let memberOrder = 1; memberOrder <= NUMBER_MEMEBER_EACH_TEAM; memberOrder++) {
+        for (let team = 1; team <= NUMBER_OF_TEAM; team++) {
+            addEventToSlot({
+                _team: team,
+                _memberOrder: memberOrder,
+                _handleFunction:
+                    function() {
+                        alert(`cick on slot: team-${team}-member-${memberOrder}`)
+                    }
+            })
+        }
+    }
+}
+
 document.addEventListener("DOMContentLoaded", function(_) {
+    initMatrix();
     getElement("sign-up-btn").addEventListener("click", handleSignUp);
     getElement("contact-us-btn").addEventListener("click", handleContact);
 

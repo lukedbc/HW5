@@ -15,8 +15,6 @@
 
 <body>
     <!-- ======================================================================================== -->
-
-    //======================================
     <div data-role="page" id="home">
 
         <!-- header -->
@@ -26,9 +24,10 @@
             <div data-role="navbar" data-theme='b'>
                 <ul>
                     <li><a href="#home">Home Page</a></li>
-                    <li><a href="#sign-up">Sign Up</a></li>
-                    <li><a href="#contact-us">Contact Us</a></li>
+                    <li><a href="#sign-up">Sign up</a></li>
+                    <li><a href="#join-a-team">Join a team</a></li>
                     <li><a href="#dashboard">Dashboard</a></li>
+                    <li><a href="#contact-us">Contact Us</a></li>
                 </ul>
             </div><!-- /navbar -->
         </div>
@@ -116,9 +115,10 @@
             <div data-role="navbar" data-theme='b'>
                 <ul>
                     <li><a href="#home">Home Page</a></li>
-                    <li><a href="#sign-up">Sign Up</a></li>
-                    <li><a href="#contact-us">Contact Us</a></li>
+                    <li><a href="#sign-up">Sign up</a></li>
+                    <li><a href="#join-a-team">Join a team</a></li>
                     <li><a href="#dashboard">Dashboard</a></li>
+                    <li><a href="#contact-us">Contact Us</a></li>
                 </ul>
             </div><!-- /navbar -->
 
@@ -135,6 +135,8 @@
                 <input type="text" id="firstName"><br>
                 <label for="lastName">Last Name</label>
                 <input type="text" id="lastName"><br>
+                <label for="major">Major</label>
+                <input type="text" id="major"><br>
                 <label for="gender">Gender</label>
                 <select name="gender" id="gender">
                     <option></option>
@@ -169,6 +171,83 @@
 
 
     <!-- ======================================================================================== -->
+    <div data-role="page" id="join-a-team">
+
+        <!-- =================================== -->
+        <!-- header -->
+        <div data-role="header" data-theme='b'>
+            <h2>Join a team</h2>
+
+
+            <div data-role="navbar" data-theme='b'>
+                <ul>
+                    <li><a href="#home">Home Page</a></li>
+                    <li><a href="#sign-up">Sign up</a></li>
+                    <li><a href="#join-a-team">Join a team</a></li>
+                    <li><a href="#dashboard">Dashboard</a></li>
+                    <li><a href="#contact-us">Contact Us</a></li>
+                </ul>
+            </div><!-- /navbar -->
+        </div>
+        <!-- =================================== -->
+
+        <!-- =================================== -->
+        <!-- content -->
+        <div data-role="content" data-theme='e'>
+            <div id="join-a-team-content">
+            </div>
+            <!-- notes footer -->
+            <div data-role="footer" data-theme='b'>
+                <h3>Copyright 2023 by Juniper Diegel and Loc Dao</h3>
+            </div>
+            <!-- =================================== -->
+
+        </div>
+    </div>
+
+    <div data-role="page" id="dashboard">
+
+        <!-- =================================== -->
+        <!-- header -->
+        <div data-role="header" data-theme='b'>
+            <h2>Management Dashboard</h2>
+
+
+            <div data-role="navbar" data-theme='b'>
+                <ul>
+                    <li><a href="#home">Home Page</a></li>
+                    <li><a href="#sign-up">Sign up</a></li>
+                    <li><a href="#join-a-team">Join a team</a></li>
+                    <li><a href="#dashboard">Dashboard</a></li>
+                    <li><a href="#contact-us">Contact Us</a></li>
+                </ul>
+            </div><!-- /navbar -->
+        </div>
+        <!-- =================================== -->
+
+        <!-- =================================== -->
+        <!-- content -->
+        <div data-role="content" data-theme='e'>
+            <div>
+                <button class="ui-btn ui-corner-all" id="sign-up-list-btn">Sign up list</button>
+                <ul id="sign-up-list" />
+            </div>
+            <div>
+                <button class="ui-btn ui-corner-all" id="contact-list-btn">Contact list</button>
+                <ul id="contact-list" />
+            </div>
+        </div>
+        <!-- =================================== -->
+
+        <!-- =================================== -->
+        <!-- notes footer -->
+        <div data-role="footer" data-theme='b'>
+            <h3>Copyright 2023 by Juniper Diegel and Loc Dao</h3>
+        </div>
+        <!-- =================================== -->
+
+    </div> <!-- ======================================================================================== -->
+
     <div data-role="page" id="contact-us">
 
         <!-- =================================== -->
@@ -180,16 +259,17 @@
             <div data-role="navbar" data-theme='b'>
                 <ul>
                     <li><a href="#home">Home Page</a></li>
-                    <li><a href="#sign-up">Sign Up</a></li>
-                    <li><a href="#contact-us">Contact Us</a></li>
+                    <li><a href="#sign-up">Sign up</a></li>
+                    <li><a href="#join-a-team">Join a team</a></li>
                     <li><a href="#dashboard">Dashboard</a></li>
+                    <li><a href="#contact-us">Contact Us</a></li>
                 </ul>
-            </div><!-- /navbar -->
+            </div><!-- /navbar -->
         </div>
         <!-- =================================== -->
 
         <!-- =================================== -->
-        <!-- content -->
+        <!-- content -->
         <div data-role="content" data-theme='e'>
             <h3>We'd love to hear from you!
                 Please contact us either by phone or email.</h3><br>
@@ -221,53 +301,11 @@
         <!-- =================================== -->
 
     </div>
-
-    <div data-role="page" id="dashboard">
-
-        <!-- =================================== -->
-        <!-- header -->
-        <div data-role="header" data-theme='b'>
-            <h2>Management Dashboard</h2>
-
-
-            <div data-role="navbar" data-theme='b'>
-                <ul>
-                    <li><a href="#home">Home Page</a></li>
-                    <li><a href="#sign-up">Sign Up</a></li>
-                    <li><a href="#contact-us">Contact Us</a></li>
-                    <li><a href="#dashboard">Dashboard</a></li>
-                </ul>
-            </div><!-- /navbar -->
-        </div>
-        <!-- =================================== -->
-
-        <!-- =================================== -->
-        <!-- content -->
-        <div data-role="content" data-theme='e'>
-            <div>
-                <button class="ui-btn ui-corner-all" id="sign-up-list-btn">Sign up list</button>
-                <ul id="sign-up-list" />
-            </div>
-            <div>
-                <button class="ui-btn ui-corner-all" id="contact-list-btn">Contact list</button>
-                <ul id="contact-list" />
-            </div>
-        </div>
-        <!-- =================================== -->
-
-        <!-- =================================== -->
-        <!-- notes footer -->
-        <div data-role="footer" data-theme='b'>
-            <h3>Copyright 2023 by Juniper Diegel and Loc Dao</h3>
-        </div>
-        <!-- =================================== -->
-
-    </div>
-    <!-- ======================================================================================== -->
     <script src="helper.js"></script>
     <script src="sign-up-entity.js"></script>
     <script src="contact-entity.js"></script>
     <script src="storage.js"></script>
+    <script src="matrix.js"></script>
     <script src="main.js"></script>
 </body>
 
